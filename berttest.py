@@ -23,6 +23,8 @@ pickle.dump(question_vectors,f)
 f.close
 
 
+# test BERT
+
 query = ['赤字でも売れますか？']
 # input to vector by sentenceBERT
 query_vector = model.encode(query)
@@ -30,6 +32,7 @@ query_vector = model.encode(query)
 
 import scipy
 
+# compute similarity
 distances = scipy.spatial.distance.cdist(query_vector, question_vectors, metric="cosine")[0]
 
 results = zip(range(len(distances)), distances)
@@ -39,6 +42,7 @@ print("\n\n======================\n\n")
 print("Query:", query)
 print("\nTop 5 most similar sentences in corpus:")
 
+# display closest 5 question to query
 closest_n = 5
 
 for idx, distance in results[0:closest_n]:
