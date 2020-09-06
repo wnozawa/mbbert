@@ -1,0 +1,15 @@
+transformers==2.3.0
+tqdm
+torch>=1.0.1
+numpy
+scikit-learn
+scipy
+nltk
+mecab-python3
+pandas
+Flask==1.1.2
+pickle
+psycopg2
+datetime
+line-bot-sdk==1.16.0
+

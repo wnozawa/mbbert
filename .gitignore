@@ -1,0 +1,19 @@
+.idea
+*.pyc
+/examples/datasets/*/
+/examples/output
+/output/
+sentence_transformers.egg-info
+/dist/
+/examples_nr/
+
+# support Japanese
+/examples/*_ja
+/examples/*_ja.py
+
+.floydexpt
+.floydignore
+floyd.yml
+floyd_requirements.txt
+
+/training_bert_japanese/
