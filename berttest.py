@@ -26,7 +26,7 @@ f.close
 # test BERT
 
 query = ['赤字でも売れますか？']
-# input to vector by sentenceBERT
+# vectorize query by sentenceBERT
 query_vector = model.encode(query)
 
 
