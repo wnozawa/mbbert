@@ -2,7 +2,7 @@
 ## ファイルの説明
 - **AllQA.csv**  
   Q&Aのリスト。１列目にQ、２列目にA。
-- **runtime.txt**
+- **runtime.txt**  
   herokuで利用するPythonのバージョンを指定するファイル。
 - **sentence_transformers**  
   文章をベクトル化するモジュール。
